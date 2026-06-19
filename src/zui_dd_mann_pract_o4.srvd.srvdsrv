@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_DD_MANN_PRACT'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_DD_MANN_PRACT'
+  }
+}
+define service ZUI_DD_MANN_PRACT_O4 provider contracts odata_v4_ui {
+  expose ZC_DD_MANN_PRACT;
+}

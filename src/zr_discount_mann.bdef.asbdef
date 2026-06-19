@@ -1,0 +1,52 @@
+managed implementation in class ZBP_R_DISCOUNT_MANN unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_DISCOUNT_MANN alias ZrDiscountMann
+persistent table ZDISCOUNT_MANN
+extensible
+draft table ZDISCOUNT_MANN_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   Travelid;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   Travelid;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZDISCOUNT_MANN corresponding extensible
+  {
+    Travelid = TRAVELID;
+    Carrierid = CARRIERID;
+    Description = DESCRIPTION;
+    Originalprice = ORIGINALPRICE;
+    Discountprice = DISCOUNTPRICE;
+    Status = STATUS;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+}

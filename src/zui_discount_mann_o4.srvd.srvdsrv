@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_DISCOUNT_MANN'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_DISCOUNT_MANN'
+  }
+}
+define service ZUI_DISCOUNT_MANN_O4 provider contracts odata_v4_ui {
+  expose ZC_DISCOUNT_MANN;
+}

@@ -1,0 +1,147 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Travelid'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Travelid'
+annotate view ZC_DISCOUNT_MANN with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Travelid;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Carrierid;
+  
+  @EndUserText.label: 'Description'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Description'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Description'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Description;
+  
+  @EndUserText.label: 'Originalprice'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Originalprice'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Originalprice'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Originalprice;
+  
+  @EndUserText.label: 'Discountprice'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Discountprice'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Discountprice'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Discountprice;
+  
+  @EndUserText.label: 'Status'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Status'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Status'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Status;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LastChangedAt;
+  
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  LocalLastChangedAt;
+}

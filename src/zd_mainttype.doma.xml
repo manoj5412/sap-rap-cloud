@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZD_MAINTTYPE</DOMNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000020</LENG>
+    <OUTPUTLEN>000020</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>maint type fixed</DDTEXT>
+    <DOMMASTER>E</DOMMASTER>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <DOMNAME>ZD_MAINTTYPE</DOMNAME>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OIL CHANGE</DOMVALUE_L>
+     <DDTEXT>oil work</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <DOMNAME>ZD_MAINTTYPE</DOMNAME>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>TIRE ROTAT</DOMVALUE_L>
+     <DDTEXT>Tire change</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <DOMNAME>ZD_MAINTTYPE</DOMNAME>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>ENGINE CHE</DOMVALUE_L>
+     <DDTEXT>engine work</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <DOMNAME>ZD_MAINTTYPE</DOMNAME>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>BRAKE INSP</DOMVALUE_L>
+     <DDTEXT>brake work</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

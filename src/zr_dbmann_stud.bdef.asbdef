@@ -1,0 +1,52 @@
+managed implementation in class ZBP_R_DBMANN_STUD unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_DBMANN_STUD alias ZrDbmannStud
+persistent table ZDB_MANN_STUD
+extensible
+draft table ZDBMANN_STUD_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   StuRollno;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   StuRollno;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZDB_MANN_STUD corresponding extensible
+  {
+    StuRollno = STU_ROLLNO;
+    StuName = STU_NAME;
+    StuFName = STU_F_NAME;
+    StuMName = STU_M_NAME;
+    StuPhno = STU_PHNO;
+    SchoolName = SCHOOL_NAME;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+}

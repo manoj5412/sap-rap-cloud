@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_DBMANN_STUD2'
+@MappingRole: true
+define role ZC_DBMANN_STUD2 {
+  grant select on ZC_DBMANN_STUD2
+  where INHERITING CONDITIONS FROM ENTITY ZR_DBMANN_STUD2 REPLACING { ROOT WITH _BaseEntity };
+}

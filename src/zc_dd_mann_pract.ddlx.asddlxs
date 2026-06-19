@@ -1,0 +1,70 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'EmpID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'EmpID'
+annotate view ZC_DD_MANN_PRACT with
+{
+  @EndUserText.label: 'EmpID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'EmpID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'EmpID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  EmpID;
+  
+  @EndUserText.label: 'EmpName'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'EmpName'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'EmpName'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  EmpName;
+  
+  @EndUserText.label: 'department'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'department'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'department'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  department;
+  
+  @EndUserText.label: 'salary'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'salary'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'salary'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  salary;
+}

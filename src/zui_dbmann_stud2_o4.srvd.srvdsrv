@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_DBMANN_STUD2'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_DBMANN_STUD2'
+  }
+}
+define service ZUI_DBMANN_STUD2_O4 provider contracts odata_v4_ui {
+  expose ZC_DBMANN_STUD2;
+}

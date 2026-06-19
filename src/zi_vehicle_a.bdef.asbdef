@@ -1,0 +1,36 @@
+managed implementation in class zbp_i_vehicle_a unique;
+strict ( 2 );
+
+define behavior for ZI_VEHICLE_A
+persistent table zdb_vehicle
+lock master
+authorization master ( instance )
+{
+  create ( authorization : global );
+  update;
+  delete;
+
+  field ( readonly ) vehicle_uuid;
+  field ( readonly ) last_service_date, totalcost;
+
+  association _Maintenance { create; }
+}
+
+define behavior for ZI_MAINT_LOG_A
+persistent table zdb_maint_log
+lock dependent by _Vehicle
+authorization dependent by _Vehicle
+{
+  update;
+  delete;
+
+  field ( readonly ) loguuid;
+  field ( readonly : update ) vehicle_uuid;
+
+  association _Vehicle;
+
+  validation validateServiceDate on save { field maint_date; }
+
+  determination calculateLastService
+    on modify { create; field maint_date; }
+}

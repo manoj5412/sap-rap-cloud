@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_STUDENT_DB1'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_STUDENT_DB1'
+  }
+}
+define service ZUI_STUDENT_DB1_O4 provider contracts odata_v4_ui {
+  expose ZC_STUDENT_DB1;
+}

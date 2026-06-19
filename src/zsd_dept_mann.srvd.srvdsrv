@@ -1,0 +1,5 @@
+@EndUserText.label: 'service definition for department'
+define service ZSD_DEPT_MANN {
+  expose ZC_DEPT_MANN as Department;
+  expose ZC_EMP_MANN  as Employee;
+}
